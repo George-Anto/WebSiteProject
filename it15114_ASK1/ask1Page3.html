@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="ask1.css" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ολυμπιακά Αθλήματα</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#button").click(function(){
+					$("button").text("Allready Pressed!!");
+					$("article.pentathlon").css("background-color", "#ffffcc");
+					$("header.pentathlon").css("background-color", "#999900");
+					$("footer.pentathlon").css("background-color", "#999900");
+					$("table").hide(1500, function(){
+						$("#hidden").fadeIn("slow");
+						$("article.pentathlon").css("padding-bottom", "124px")
+							.css("text-align", "center");
+						$(".pentathlonpng").fadeOut(2000, function(){
+							var h1 = $("#pentaH1");
+							h1.animate({left: '450px', opacity: '0.2',}, 1000);
+							h1.animate({left: '0px', opacity: '0.6',}, 1500);
+						});
+					});		
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+	
+		<header class="pentathlon">
+		<img class="pentathlonpng" src="πενταθλο2.png" alt="pentathlon2" width="100" height="100" />
+		<h1 id="pentaH1">Ολυμπιακά Αθλήματα</h1>
+		</header>
+		<section class="row">
+			<nav class="pentathlon col-1">
+				<dl>
+					<dt><a href="ask1Page2.html">Πυγμαχία</a></dt>
+					<br />
+					<dt><a href="index.html">Τοξοβολία</a></dt>
+					<br />
+					<dt><a href="ask1Page3.html">Μοντέρνο Πένταθλο</a></dt>
+				</dl>
+			</nav>
+			<article class="pentathlon col-2">
+				<h2>Μοντέρνο Πένταθλο</h2>
+				
+				<img class="pentathlonpng" src="πενταθλο1.png" alt="pentathlon1" width="175" height="152" />
+				
+				<p><span class="firstLetter">T</span>ο <a href="https://eomop.gr/%CE%BC%CE%BF%CE%BD%CF%84%CE%B5%CF%81%CE%BD%
+				CE%BF-%CF%80%CE%B5%CE%BD%CF%84%CE%B1%CE%B8%CE%BB%CE%BF/" class="pentathlonLinks">μοντέρνο πένταθλο</a>
+				είναι ένα σύνθετο ολυμπιακό άθλημα, το οποίο επινόησε
+				ο Γάλλος εμπνευστής των σύγχρονων Ολυμπιάδων βαρόνος Πιέρ ντε Κουμπερτέν. Εντάχθηκε στις
+				Ολυμπιάδες το 1912 στη Στοκχόλμη ως ατομικό αγώνισμα. Από το 1952 στο Ελσίνκι ως το 1992
+				στη Βαρκελώνη διεξαγόταν και ομαδικό αγώνισμα. Από το 2000 υπάρχει και αγώνισμα γυναικών.
+				Το μοντέρνο πένταθλο είναι συνδυασμός πέντε διαφορετικών αθλημάτων: σκοποβολής, ξιφασκίας,
+				κολύμβησης, ιππασίας και ανώμαλου δρόμου, τα οποία διεξάγονται σε μία ημέρα. Οι αθλητές βαθμολογούνται
+				σε κάθε ένα ξεχωριστά και νικητής αναδεικνύεται όποιος συγκεντρώσει τη μεγαλύτερη βαθμολογία.</p>
+			
+				<p>Όσοι έχετε χρόνο μπορείτε να δείτε την συνέντευξη του αθλητή Άρη Κόμη στον ραδιοφωνικό 
+				σταθμό 98,4 για να μπείτε στον κόσμο το μοντέρνου πεντάθλου, κάνοντας κλικ 
+				<a href="https://www.youtube.com/watch?v=XCpfab_KuSg" class="pentathlonLinks">εδώ</a>.</p>
+				
+				<table align="center">
+				
+					<caption>Πίνακας 1.1: Κάτοχοι των Παγκόσμιων Ρεκόρ στους άντρες</caption>
+				
+					<thead>
+						<tr>
+							<th>Ρεκόρ</th>		
+							<th>Αθλητής</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>Συνολικοί Πόντοι</td>
+							<td>LESUN Alexander (RUS)</td>
+							<td rowspan="2"><img src="swimming.jpg" alt="swimming" width="100" height="100" /></td>
+						</tr>
+							<td>Ξιφασκία</td>
+							<td>LESUN Alexander (RUS)</td>
+						<tr>
+							<td>Κολύμβηση 25Μ Πισίνα</td>
+							<td>James COOKE (GBR)</td>
+							<td rowspan="2"><img src="sword.jpg" alt="swimming" width="100" height="100" /></td>
+						</tr>
+						<tr>
+							<td>Κολύμβηση 50Μ Πισίνα</td>
+							<td>Logan STORIE (USA)</td>
+						</tr>
+					</tbody>
+				
+				</table>
+				
+				<div id="hidden">
+					<h3><i>Και τώρα λίγα πράγματα για τον μύθο...</i></h3>
+					
+					<p>O μύθος θέλει το άθλημα να ξεπηδά από την περιπέτεια ενός αγγελιοφόρου πολεμιστή,
+					ο οποίος στην προσπάθειά του να μεταφέρει ένα σημαντικό μήνυμα στα μετόπισθεν, ξεκίνησε
+					έφιππος και όταν το άλογο του σκοτώθηκε στη μάχη, χρειάστηκε να χρησιμοποιήσει το όπλο του,
+					να ξιφομαχήσει με τους εχθρούς, να κολυμπήσει μέσα από θάλασσες και ποτάμια και να τρέξει ανάμεσα
+					στις γραμμές του εχθρού, προκειμένου να φέρει εις πέρας τη δύσκολη αποστολή του.
+					</p>
+					<p>
+					Το μοντέρνο πένταθλο, ακολουθώντας τα χνάρια της περιπέτειας του αγγελιοφόρου πολεμιστή,
+					περιλαμβάνει πέντε διαφορετικά εντυπωσιακά αγωνίσματα, τεχνικά και δυναμικά, που συναποτελούν
+					ένα συναρπαστικό άθλημα που απαιτεί δεκάδες διαφορετικές αρετές. 
+					</p>
+				</div>
+				
+				</br >
+				</br >
+				<p align="center">
+					<button id="button">Press Me!!</button>
+				</p>
+				</br >
+				
+			</article>
+			<aside class="pentathlon col-3">
+				<a href="index.html"><span id="asidePentathlon">Επιστροφή<br />στην Αρχική<br />Σελίδα</span></a>
+			</aside>
+		</section>
+		<footer class="pentathlon">
+			<h5 class="pentathlon">Copyright © Ελληνική Ολυμπιακή Επιτροπή</h5>
+		</footer>
+
+	</body>
+
+</html>
